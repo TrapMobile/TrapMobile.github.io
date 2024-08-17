@@ -5,54 +5,58 @@
     box-sizing: border-box;
 }
 
-/* Stile del corpo della pagina */
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-    overflow-x: hidden;
-    margin: 0;
-}
-
-/* Container principale */
 .container {
     display: flex;
     width: 100%;
     height: 100vh;
   }
   
-  body {
-    margin: 0;
-    overflow-x: hidden; /* Nascondi la scrollbar orizzontale */
-}
 
-.video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Adatta la larghezza al 100% dello schermo */
-    height: 50vh; /* Imposta l'altezza desiderata */
-    object-fit: cover;
-    filter: blur(5px);
+.video-container {
+    position: static;
+    width: 100%;
+    height: 20%;
+    filter: blur(3px);
     z-index: -1;
 }
 
-.video-container {
-    position: absolute;
+.video {
+    position: static;
     width: 100%;
-    height: 100vh;
+    height: 500%;
+    object-fit: scale-down;
+ 
+
+}
+
+.title {
+    position: absolute;
+    top: 34%;
+    left: 0;
+    color: rgb(0, 0, 0);
+    font-size: 5rem; /* Adatta la dimensione del font */
+    font-family: Arial, sans-serif; /* Scegli il font desiderato */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiungi un'ombra per migliorare la leggibilità */
+    width: 100%;
+    text-align: center;
+
 }
 .text-container {
-    position: absolute;
-    font-size: 50px;
-    top: 20%;
-    left: 50%;
+    position: relative;
+    font-size: 10px;
+    top: 100%;
+    left: 0%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     text-align: center;
 }
 
+.text{
+    position: relative;
+    color: black;
+    font-family: arial, sans-serif;
+
+}
 
 /* Stile della sidebar */
 .sidebar {
